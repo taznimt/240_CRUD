@@ -12,3 +12,12 @@ app.get('/',(req,res)=> {
 app.listen(PORT, ()=> {
     console.log('Server is running on port ${PORT}');
 });
+
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'Itam4869',
+    database: 'biodata',
+    port:3307
+});
+
